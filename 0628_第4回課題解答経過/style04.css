@@ -33,6 +33,7 @@
     
     /* メニュー横一列 */
     header{
+        width: 100%;
         display: flex;
     }
 
@@ -58,7 +59,6 @@
         width: 70%;
         /* 文字列 縦中央の設定 */
         display: flex;
-        align-items: center;
         /* 文字列 横一列の設定 */
         justify-content: flex-end;
     }
@@ -66,17 +66,23 @@
     nav ul{
         display: flex;
         list-style: none;
-        /* 文字列 縦中央の設定 */
-        /* line-height: 80px; */
     }
 
     nav ul li{
         font-size: 14px;
+        height: 116px;
+        line-height: 116px;
     }
 
     nav ul li a{
         color:#7a7a7a;
         text-decoration: none;
+        display: block;
+        padding:0px 12px;
+    }
+
+    nav ul li a:hover{
+        border-bottom: 2px solid #0693e3;
     }
 
     nav ul li.menu_tag{
