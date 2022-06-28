@@ -56,14 +56,18 @@
 
     nav{
         width: 70%;
+        /* 文字列 縦中央の設定 */
+        display: flex;
+        align-items: center;
+        /* 文字列 横一列の設定 */
+        justify-content: flex-end;
     }
 
     nav ul{
         display: flex;
-        justify-content: flex-end;
         list-style: none;
-        line-height: 80px;
-        padding:33px 0;
+        /* 文字列 縦中央の設定 */
+        /* line-height: 80px; */
     }
 
     nav ul li{
@@ -72,7 +76,6 @@
 
     nav ul li a{
         color:#7a7a7a;
-        /* リンク文字の下線を消す */
         text-decoration: none;
     }
 
