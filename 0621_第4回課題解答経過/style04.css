@@ -1,0 +1,72 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* スマホサイト用スクリーンはじまり */
+@media screen and (max-width:960px) {
+
+    /* 画像の設定 */
+    h1{
+        width: 166px;
+        height: 34px;
+    }
+
+    h1 a{
+        width: 166px;
+        height: 34px;
+        display: block;
+        background-image: url(https://ict.ac.jp/animeanime-denshi.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        overflow: hidden;
+        text-indent: 100%;
+        white-space: nowrap;
+    }
+
+    /* スマホサイト用スクリーンおわり */
+}
+
+/* PCサイト用スクリーンはじまり */
+@media screen and (min-width:960px) {
+    
+    /* メニュー横一列 */
+    header{
+        display: flex;
+    }
+
+    /* 画像の設定 */
+    h1{
+        width: 400px;
+        height: 80px;
+    }
+
+    h1 a{
+        width: 400px;
+        height: 80px;
+        display: block;
+        background-image: url(https://ict.ac.jp/animeanime-denshi.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        overflow: hidden;
+        text-indent: 100%;
+        white-space: nowrap;
+    }
+
+    nav{
+        width: 70%;
+    }
+
+    nav ul{
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+    }
+
+    nav ul li.menu_tag{
+        display: none;
+    }
+
+    /* PCサイト用スクリーンおわり */
+}
