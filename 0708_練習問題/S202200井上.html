@@ -2,20 +2,288 @@
 <html lang="ja">
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>KOBELCO 神戸製鋼</title>
         <link rel="stylesheet" href="./style0708.css">
     </head>
     <body>
-        <header>
-            <h1><a href="#">アニメ！アニメ！電子書籍比較</a></h1>
-            <nav>
-                <ul>
-                    <li class="menu_tag">MENU</li>
-                    <li><a href="#">運営者情報</a></li>
-                    <li><a href="#">プライバシーポリシー</a></li>
-                    <li><a href="#">お問い合わせ</a></li>
-                </ul>
-            </nav>
-        </header>
+    <!-- l-header: [共通]ヘッダー -->
+	<header id="header" class="l-header">
+		<div class="l-inner">
+			<ul class="header-link link-lang">
+				<li>日本語</li>
+				<li lang="en">English</a></li>
+				<li lang="zh-cn">中文</a></li>
+			</ul>
+			<h1 class="logo">
+				<img src="https://www.kobelco.co.jp/assets/img/common/logo_pc.png" alt="KOBELCO 神戸製鋼" class="js-switch-image">
+			</h1>
+			<div class="header-unit">
+				<div class="search-unit">
+					<form name="SS_searchForm">
+						<div class="search-field">
+							<div class="search-text">
+								<input type="text" name="query" value="" placeholder="検索したいワードを入力してください" class="box-search">
+								<input type="image" src="https://www.kobelco.co.jp/assets/img/common/icon_search.svg" alt="検索" name="submit" id="submit" class="btn btn-search">
+							</div>
+							<div class="search-radio">
+								<ul class="field-check">
+									<li>
+										<input type="radio" name="group" value="0" id="all-k12">
+										<label for="all-k12">グループ全体</label>
+									</li>
+									<li>
+										<input type="radio" name="group" value="3" id="inside-k12" checked="checked">
+										<label for="inside-k12">このサイト内</label>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- /l-header: [共通]ヘッダー -->
+    <!-- navigation: [共通]グローバルナビゲーション -->
+	<nav aria-label="グローバルナビゲーション">
+		<div class="l-navbar js-nav-pc">
+			<ul class="global-nav">
+				<li class="nav-item">
+					<dl class="nav-category js-accordion-megamenu">
+						<dt class="nav-label nav-ttl js-accordion-head" tabindex="0"><a href="/about_kobelco/">企業情報</a></dt>
+						<dd class="nav-contents js-accordion-body">
+							<div class="nav-contents-inner">
+								<div class="nav-contents-row">
+									<div class="nav-contents-col col4-2">
+										<div class="nav-link-head">企業情報</div>
+										<div class="subnav-container">
+											<ul class="nav-link js-accordion-subnav">
+												<li><a href="/about_kobelco/kobesteel/message/index.html" class="subnav-ttl">社長メッセージ</a></li>
+												<li><a href="/about_kobelco/kobesteel/profile/index.html" class="subnav-ttl">会社概要</a></li>
+												<li><a href="/about_kobelco/kobesteel/organization/index.html" class="subnav-ttl">役員・組織</a></li>
+												<li><a href="/about_kobelco/kobesteel/locations/index.html" class="subnav-ttl">事業所案内</a></li>
+												<li><a href="/about_kobelco/outline/philosophy/" class="subnav-ttl">グループ企業理念</a></li>
+												<li><a href="/about_kobelco/outline/next100/" class="subnav-ttl">KOBELCOの約束 Next100プロジェクト</a></li>
+												<li><a href="/about_kobelco/kobesteel/ethics-compliance/index.html" class="subnav-ttl">企業倫理・コンプライアンス</a></li>
+												<li><a href="/about_kobelco/kobesteel/governance/index.html" class="subnav-ttl">コーポレートガバナンス</a></li>
+												<li><a href="/sustainability/index.html" class="subnav-ttl">サステナビリティ経営</a></li>
+												<li><a href="/about_kobelco/outline/integrated-reports/index.html" class="subnav-ttl">統合報告書</a></li>
+												<li><a href="/about_kobelco/kobesteel/email_subscription/index.html" class="subnav-ttl">メール配信サービス</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="nav-contents-col col4-2">
+										<div class="nav-link-head">KOBELCOアウトライン</div>
+										<div class="nav-contents-inner subnav-container">
+											<ul class="nav-link js-accordion-subnav">
+												<li><a href="/about_kobelco/outline/history/index.html" class="subnav-ttl">歴史・歩み</a></li>
+												<li><a href="/about_kobelco/outline/business/" class="subnav-ttl">KOBELCOの事業</a></li>
+												<li><a href="/about_kobelco/group/index.html" class="subnav-ttl">関係会社案内</a></li>
+												<li><a href="/about_kobelco/outline/brand/" class="subnav-ttl">ブランド</a></li>
+												<li><a href="/about_kobelco/outline/branding/" class="subnav-ttl">KOBELCOのブランディング</a></li>
+												<li><a href="https://www.kobesteelers.com/" target="_blank" class="subnav-ttl">KOBELCO KOBE STEELERS</a></li>
+												<li><a href="/nadahama/index.html" class="subnav-ttl">神戸製鋼の地域交流施設</a></li>
+												<li><a href="/about_kobelco/outline/health/index.html" class="subnav-ttl">健康経営銘柄</a></li>
+												<li><a href="/about_kobelco/awards/" class="subnav-ttl">受賞履歴</a></li>
+												<li><a href="/about_kobelco/outline/dx/index.html" class="subnav-ttl">KOBELCO Digital Transformation（DX）戦略</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</dd>
+					</dl>
+				</li>
+				<li class="nav-item">
+					<dl class="nav-category js-accordion-megamenu">
+						<dt class="nav-label nav-ttl js-accordion-head" tabindex="0"><a href="/products/">技術・製品情報</a></dt>
+						<dd class="nav-contents js-accordion-body">
+							<div class="nav-contents-inner">
+								<div class="nav-contents-row">
+									<div class="nav-contents-col col4-2">
+										<div class="nav-link-head">製品情報</div>
+										<div class="subnav-container">
+											<ul class="nav-link js-accordion-subnav">
+												<li><a href="/steel-aluminum/" class="subnav-ttl">鉄鋼アルミ事業部門</a></li>
+												<li><a href="/advanced-materials/" class="subnav-ttl">素形材事業部門</a></li>
+												<li><a href="/welding/" class="subnav-ttl">溶接事業部門</a></li>
+												<li><a href="/machinery/" class="subnav-ttl">機械事業部門</a></li>
+												<li><a href="/engineering/" class="subnav-ttl">エンジニアリング事業部門</a></li>
+												<li><a href="/construction-machinery/" class="subnav-ttl">コベルコ建機</a></li>
+												<li><a href="/electric-power/" class="subnav-ttl">電力事業部門</a></li>
+												<li><a href="/other-business/" class="subnav-ttl">その他（不動産・電子材料など）</a></li>
+												<li><a href="/products/kenzai/" class="subnav-ttl">建築・土木関連製品</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="nav-contents-col col4-1">
+										<div class="nav-link-head">KOBELCO with LIFE</div>
+										<div class="subnav-container">
+											<ul class="nav-link js-accordion-subnav">
+												<li><a href="/kobelco_with_life/life.html" class="subnav-ttl">くらしを快適にする</a></li>
+												<li><a href="/kobelco_with_life/energy.html" class="subnav-ttl">エネルギーを創る</a></li>
+												<li><a href="/kobelco_with_life/machine.html" class="subnav-ttl">乗り物を軽くする</a></li>
+												<li><a href="/kobelco_with_life/prevent.html" class="subnav-ttl">災害を防ぐ</a></li>
+												<li><a href="/kobelco_with_life/interact.html" class="subnav-ttl">人とふれあう</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="nav-contents-col col4-1 col-nohead">
+										<div class="subnav-container">
+											<ul class="nav-link js-accordion-subnav">
+												<li><a href="/products/r-d/" class="subnav-ttl">研究開発</a></li>
+												<li><a href="/products/visual_tour/" class="subnav-ttl">映像で見る工場</a></li>
+												<li><a href="/kaiteki/" class="subnav-ttl">快適な生活へ</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</dd>
+					</dl>
+				</li>
+				<li class="nav-item">
+					<dl class="nav-category js-accordion-megamenu">
+						<dt class="nav-label nav-ttl js-accordion-head" tabindex="0"><a href="/sustainability/index.html">サステナビリティ</a></dt>
+						<dd class="nav-contents js-accordion-body">
+							<div class="nav-contents-inner">
+								<div class="nav-contents-row">
+									<div class="nav-contents-col col4-4">
+										<div class="nav-link-head">サステナビリティ</div>
+										<div class="subnav-container">
+											<ul class="nav-link js-accordion-subnav">
+												<li><a href="/sustainability/message.html" class="subnav-ttl">サステナビリティ推進委員会　委員長メッセージ</a></li>
+												<li><a href="/sustainability/#sustain" class="subnav-ttl">サステナビリティ経営</a></li>
+												<li><a href="/sustainability/#governance" class="subnav-ttl">ガバナンス</a></li>
+												<li><a href="/sustainability/#social" class="subnav-ttl">社会</a></li>
+												<li><a href="/sustainability/#environment" class="subnav-ttl">環境</a></li>
+												<li><a href="/sustainability/#social_contributions" class="subnav-ttl">社会貢献活動</a></li>
+												<li><a href="/sustainability/#other" class="subnav-ttl">その他</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</dd>
+					</dl>
+				</li>
+				<li class="nav-item">
+					<dl class="nav-category js-accordion-megamenu">
+						<dt class="nav-label nav-ttl js-accordion-head" tabindex="0"><a href="/ir/">株主・投資家情報</a></dt>
+						<dd class="nav-contents js-accordion-body">
+							<div class="nav-contents-inner">
+								<div class="nav-contents-row">
+									<div class="nav-contents-col col4-4">
+										<div class="nav-link-head">株主・投資家情報</div>
+										<div class="subnav-container">
+											<ul class="nav-link js-accordion-subnav">
+												<li><a href="/about_kobelco/outline/integrated-reports/index.html" class="subnav-ttl">統合報告書</a></li>
+												<li><a href="/ir/policy/vision/" class="subnav-ttl">グループ中長期経営ビジョン</a></li>
+												<li><a href="/ir/library/everyone/" class="subnav-ttl">「株主の皆様へ」</a></li>
+												<li><a href="/ir/calendar/" class="subnav-ttl">IRカレンダー</a></li>
+												<li><a href="/ir/stockinformation/price/index.html" class="subnav-ttl">株価情報</a></li>
+												<li><a href="/ir/stockinformation/" class="subnav-ttl">株式情報</a></li>
+												<li><a href="/ir/library/fncl_results/" class="subnav-ttl">決算短信</a></li>
+												<li><a href="/ir/library/vlbl_security/" class="subnav-ttl">有価証券報告書</a></li>
+												<li><a href="/ir/library/convocation/index.html" class="subnav-ttl">株主総会</a></li>
+												<li><a href="/ir/library/investor_meeting/" class="subnav-ttl">IR説明会資料</a></li>
+												<li><a href="/ir/highlight/" class="subnav-ttl">財務ハイライト</a></li>
+												<li><a href="/about_kobelco/kobesteel/governance/index.html" class="subnav-ttl">コーポレートガバナンス</a></li>
+												<li><a href="/sustainability/index.html" class="subnav-ttl">サステナビリティ経営</a></li>
+												<li><a href="/about_kobelco/outline/health/index.html" class="subnav-ttl">健康経営銘柄</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</dd>
+					</dl>
+				</li>
+				<li class="nav-item">
+					<dl class="nav-category js-accordion-megamenu">
+						<dt class="nav-label nav-ttl js-accordion-head" tabindex="0"><a href="/saiyo/">採用情報</a></dt>
+						<dd class="nav-contents js-accordion-body">
+							<div class="nav-contents-inner">
+								<div class="nav-contents-row">
+									<div class="nav-contents-col col4-4">
+										<div class="nav-link-head">採用情報</div>
+										<div class="subnav-container">
+											<ul class="nav-link js-accordion-subnav">
+												<li><a href="https://www.kobelco-gr.jp/" class="subnav-ttl" target="_blank">KOBELCOグループ採用サイト</a></li>
+												<li><a href="https://recruiting-site.jp/s/kobelco/" class="subnav-ttl" target="blank">キャリア採用（総合職）</a></li>
+												<li><a href="/saiyo_careers/gijutsu/index.html" class="subnav-ttl">キャリア採用（基幹職）</a></li>
+												<li><a href="/shougai/" class="subnav-ttl">障がい者採用</a></li>
+												<li><a href="/gikensei/" class="subnav-ttl">高校生向け採用サイト</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</dd>
+					</dl>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!-- /navigation: [共通]グローバルナビゲーション -->
+	<div id="contents">
+<style type="text/css">
+.hero-slider .slide-img::before {
+	padding-top: 42.75%;
+}
+</style>
+		<div class="l-container">
+				<!-- hero -->
+			 <div class="l-top-hero" style="max-height: 650px;">
+				<div class="l-slider hero-slider js-slick-hero" style="max-height: 650px;">
+										
+
+
+					<div class="hero-slide" style="max-height: 650px;">
+						<a href="/materiality/">
+							<div class="slide-img">
+								<img src="/assets/img/top/materiality_top.jpg" alt="マテリアリティ">
+							</div>
+						</a>
+					</div> 
+					<div class="hero-slide" style="max-height: 650px;">
+						<a href="/materiality/mate1.html">
+							<div class="slide-img">
+								<img src="/assets/img/top/materiality01.jpg" alt="グリーン社会への貢献">
+							</div>
+						</a>
+					</div>
+					<div class="hero-slide" style="max-height: 650px;">
+						<a href="/materiality/mate3.html">
+							<div class="slide-img">
+								<img src="/assets/img/top/materiality03.jpg" alt="安心・安全なまちづくり・ものづくりへの貢献">
+							</div>
+						</a>
+					</div>
+					<div class="hero-slide" style="max-height: 650px;">
+						<a href="/materiality/mate2.html">
+							<div class="slide-img">
+								<img src="/assets/img/top/materiality02.jpg" alt="人と技術でつなぐ未来へのソリューション提供">
+							</div>
+						</a>
+					</div>
+					<div class="hero-slide" style="max-height: 650px;">
+						<a href="/materiality/mate4.html">
+							<div class="slide-img">
+								<img src="/assets/img/top/materiality04.jpg" alt="多様な人材の活躍推進">
+							</div>
+						</a>
+					</div>
+					<div class="hero-slide" style="max-height: 650px;">
+						<a href="/materiality/mate5.html">
+							<div class="slide-img">
+								<img src="/assets/img/top/materiality05.jpg" alt="持続的成長を支えるガバナンスの追究">
+							</div>
+						</a>
+					</div>
+
+				 </div>
+			</div>
+
     </body>
 </html>
