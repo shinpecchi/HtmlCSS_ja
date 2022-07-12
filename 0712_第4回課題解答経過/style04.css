@@ -1,0 +1,109 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* スマホサイト用スクリーンはじまり */
+@media screen and (max-width:960px) {
+
+    /* 画像の設定 */
+    h1{
+        width: 166px;
+        height: 34px;
+    }
+
+    h1 a{
+        width: 166px;
+        height: 34px;
+        display: block;
+        background-image: url(https://ict.ac.jp/animeanime-denshi.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        overflow: hidden;
+        text-indent: 100%;
+        white-space: nowrap;
+    }
+
+    /* スマホサイト用スクリーンおわり */
+}
+
+/* PCサイト用スクリーンはじまり */
+@media screen and (min-width:960px) {
+    
+    /* メニュー横一列 */
+    header{
+        width: 100%;
+        display: flex;
+    }
+
+    /* 画像の設定 */
+    h1{
+        margin-left: 20px;
+        margin-top: 20px;
+        width: 400px;
+        height: 80px;
+    }
+
+    h1 a{
+        width: 400px;
+        height: 80px;
+        display: block;
+        background-image: url(https://ict.ac.jp/animeanime-denshi.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        overflow: hidden;
+        text-indent: 100%;
+        white-space: nowrap;
+    }
+
+    nav{
+        width: 70%;
+        /* 文字列 縦中央の設定 */
+        display: flex;
+        /* 文字列 横一列の設定 */
+        justify-content: flex-end;
+    }
+
+    nav ul{
+        display: flex;
+        list-style: none;
+    }
+
+    nav ul li{
+        font-size: 14px;
+        height: 116px;
+        line-height: 116px;
+    }
+
+    nav ul li a{
+        color:#7a7a7a;
+        text-decoration: none;
+        display: inline-block;
+        padding: 0px 12px;
+        position: relative;
+    }
+
+    nav ul li a::after{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-color: #0693e3;
+        transform: scale(0, 1);
+        transform-origin: center top;
+        transition: .3s;
+    }
+
+    nav ul li a:hover::after{
+        transform: scale(1, 1);
+    }
+
+    nav ul li.menu_tag{
+        display: none;
+    }
+
+    /* PCサイト用スクリーンおわり */
+}
