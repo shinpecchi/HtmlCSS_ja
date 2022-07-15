@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <!-- スマホ・PCサイトの適用 -->
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <!-- タイトル の設定 -->
+        <title>アニメ！アニメ！電子書籍比較</title>
+        <!-- スタイルシートの適用 -->
+        <link rel="stylesheet" href="./style04.css">
+        <!-- JQueryの適用 -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script>
+            $(function(){
+                $(".hamburger").click(function(){
+                    $(this).toggleClass("active");
+                    /* hamburger クラス が hamburger acrive クラスに変わっている場合 */
+                    if($(this).hasClass("active")){
+                        /* hamburger がクリックされた場合 */
+                        $(".globalMenuSp").addClass("active");
+                    }else{
+                        /* hamburger がもう一度クリックされた場合 */
+                        $(".globalMenuSp").removeClass("active");
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1><a href="#">アニメ！アニメ！電子書籍比較</a></h1>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="globalMenuSp">
+                <ul>
+                    <li class="menu_tag">MENU</li>
+                    <li><a href="#">運営者情報</a></li>
+                    <li><a href="#">プライバシーポリシー</a></li>
+                    <li><a href="#">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </header>
+    </body>
+</html>
